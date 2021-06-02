@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.card-container {
+    height: 80%;
+    width: 90%;
+    display: flex;
+    gap: 8px;
+}
+
+.card {
+    width: 50px;
+    height: 100%;
+    border: 1px black solid;
+    border-radius: 25px;
+    position: relative;
+    font-size: 2rem;
+    text-transform: uppercase;
+    transition: flex 1s ease-out;
+    /* overflow: hidden; */
+}
+
+.card:nth-child(1) {
+    background: url(images/andy-hay-ZN-TT10kf4o-unsplash.jpg);
+    background-size: cover ;
+    background-position: center;
+}
+
+.card:nth-child(2) {
+    background: url(images/eiliv-sonas-aceron-mnpp17AFFVA-unsplash.jpg);
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card:nth-child(3) {
+    background: url(images/goodeats-yqr-K8r9kiZ352M-unsplash.jpg);
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card:nth-child(4) {
+    background: url(images/jennifer-latuperisa-andresen-_yAuXzeu5Q4-unsplash.jpg);
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card:nth-child(5) {
+    background: url(images/rachel-park-hrlvr2ZlUNk-unsplash.jpg);
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card.active {
+    flex: 5;
+}
+
+.card h3 {
+    opacity: 0;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    background-color: aliceblue;
+    padding: 2px 0 2px 20px;
+    transition: opacity 1s;
+}
+
+.card.active h3 {
+    opacity: 1;
+}
+
+@media (max-width: 650px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        height: 50px;
+    }
+}
+
+@media (max-width: 330px) {
+    .card h3 {
+        visibility: hidden;
+    }
+}
+
