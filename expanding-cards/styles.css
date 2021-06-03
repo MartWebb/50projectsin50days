@@ -34,42 +34,28 @@ img {
     position: relative;
     font-size: 2rem;
     text-transform: uppercase;
-    transition: flex 1s ease-out;
-    /* overflow: hidden; */
+    transition: 1s ease-out;
+    overflow: hidden;
 }
 
 .card:nth-child(1) {
-    background: url(images/andy-hay-ZN-TT10kf4o-unsplash.jpg);
-    background-size: cover ;
-    background-position: center;
+    background: center/cover url(images/andy-hay-ZN-TT10kf4o-unsplash.jpg);
 }
 
 .card:nth-child(2) {
-    background: url(images/eiliv-sonas-aceron-mnpp17AFFVA-unsplash.jpg);
-    background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background: no-repeat center/cover url(images/eiliv-sonas-aceron-mnpp17AFFVA-unsplash.jpg);
 }
 
 .card:nth-child(3) {
-    background: url(images/goodeats-yqr-K8r9kiZ352M-unsplash.jpg);
-    background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background: no-repeat center/cover url(images/goodeats-yqr-K8r9kiZ352M-unsplash.jpg);
 }
 
 .card:nth-child(4) {
-    background: url(images/jennifer-latuperisa-andresen-_yAuXzeu5Q4-unsplash.jpg);
-    background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background: no-repeat center/cover url(images/jennifer-latuperisa-andresen-_yAuXzeu5Q4-unsplash.jpg);
 }
 
 .card:nth-child(5) {
-    background: url(images/rachel-park-hrlvr2ZlUNk-unsplash.jpg);
-    background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+    background: no-repeat center/cover url(images/rachel-park-hrlvr2ZlUNk-unsplash.jpg);
 }
 
 .card.active {
@@ -83,11 +69,12 @@ img {
     width: 100%;
     background-color: aliceblue;
     padding: 2px 0 2px 20px;
-    transition: opacity 1s;
+    
 }
 
 .card.active h3 {
     opacity: 1;
+    transition: 2s ease-in-out;
 }
 
 @media (max-width: 650px) {
