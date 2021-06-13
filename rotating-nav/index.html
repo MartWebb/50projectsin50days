@@ -1,47 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rotating Nav</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <div class="circle container">
-            <div class="circle">
-                <button class="close">
-                    <i class="fas fa-times"></i>
-                </button>
-                <button class="open">
-                    <i class="fas fa-bars"></i>
-                </button>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rotating Nav</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="circle-container">
+                <div class="circle">
+                    <button class="close">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <button class="open">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="content">
+                <h1>My Pet Turtle</h1>
+                <img src="images/wexor-tmg-L-2p8fapOA8-unsplash.jpg" alt="Sea turtle">
+                <p>
+                    Ever since watching the Teenage Mutant Hero Turtles when I was 8 I wanted a real 
+                    turtle. One day I was just walking in the sewer, as you do, and I spotted a turtle.
+                    I said to myself "he is the perfect pet for an apartment", so I took him home. 
+                    Tim the turtle has been with me 33 years now, and he is my best friend, I keep him in the bath
+                    of course. It gets a bit cramped when me or my wife have a bath or shower, but I would not have it any other way.
+                </p>
             </div>
         </div>
-
-        <div class="content">
-            <h1>My Pet Turtle</h1>
-            <img src="images/wexor-tmg-L-2p8fapOA8-unsplash.jpg" alt="Sea turtle">
-            <p>
-                Ever since watching the Teenage Mutant Hero Turtles when I was 8 I wanted a real 
-                turtle. One day I was just walking in the sewer, as you do, and I spotted a turtle.
-                I said to myself "he is the perfect pet for an apartment", so I took him home. 
-                Tim the turtle has been with me 33 years now, and he is my best friend, I keep him in the bath
-                of course. It gets a bit cramped when me or my wife have a bath or shower, but I would not have it any other way.
-            </p>
-        </div>
-
-        <nav>
-            <ul>
-                <li><i class="fas fa-home"></i>Home</li>
-                <li><i class="fas fa-user-alt"></i>About</li>
-                <li><i class="fas fa-envelope"></i>Contact</li>
-            </ul>
-        </nav>
-    </div>
-    <script src="index.js"></script>
-</body>
+            <nav>
+                <ul>
+                    <li><i class="fas fa-home"></i>Home</li>
+                    <li><i class="fas fa-user-alt"></i>About</li>
+                    <li><i class="fas fa-envelope"></i>Contact</li>
+                </ul>
+            </nav>
+        
+        <script src="index.js"></script>
+    </body>
 </html>
