@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+/* General */
 
 *,
 *::after,
@@ -9,11 +9,10 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Comic Neue', cursive;
     background-color: #333;
     color: #222;
     overflow-x: hidden;
-    margin: 0;
 }
 
 .container {
@@ -25,17 +24,15 @@ body {
     padding: 50px;
 }
 
-.container.show-nav {
-    transform: rotate(-20deg);
-}
+/* Rotator */
 
-.circle-container {
+.rotator-container {
     position: fixed;
     top: -100px;
     left: -100px;
 }
 
-.circle {
+.rotator {
     background-color: #FF7F50;
     height: 200px;
     width: 200px;
@@ -44,11 +41,15 @@ body {
     transition: transform 0.5s linear;
 }
 
-.container.show-nav .circle {
+.container.rotate {
+    transform: rotate(-20deg);
+}
+
+.container.rotate .rotator {
     transform: rotate(-70deg);
 }
 
-.circle button {
+.rotator button {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -60,21 +61,46 @@ body {
     color: #fff;
 }
 
-.circle button:focus {
+.rotator button:focus {
     outline: none;
 }
 
-.circle button.open {
+.rotator button.open {
     left: 60%;
 }
 
-.circle button.close {
+.rotator button.close {
     top: 60%;
     transform: rotate(90deg);
     transform-origin: top left;
 }
 
-.container.show-nav + nav li {
+/* Content */
+
+.content {
+    max-width: 1000px;
+    margin: 80px auto;
+}
+
+.content-header {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.content-image {
+    max-width: 100%;
+}
+
+.content p {
+    color: #333;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+/* Nav */
+
+.container.rotate + nav li {
     transform: translateX(0);
     transition-delay: 0.3s;
 }
@@ -112,24 +138,4 @@ nav ul li + li {
 nav ul li + li + li {
     margin-left: 30px;
     transform: translateX(-200%);
-}
-
-.content img {
-    max-width: 100%;
-}
-
-.content {
-    max-width: 1000px;
-    margin: 50px auto;
-}
-
-.content p {
-    color: #333;
-    line-height: 1.5;
-    margin-top: 20px;
-}
-
-h1 {
-    font-weight: bold;
-    margin-bottom: 20px;
 }

@@ -1,6 +1,6 @@
-const card = document.querySelectorAll('.card');
+const cards = document.querySelectorAll('.card');
 
-card.forEach(card => {
+cards.forEach(card => {
     card.addEventListener('click', () => {
         removeActive();
         card.classList.toggle('active');
@@ -8,7 +8,7 @@ card.forEach(card => {
 });
 
 const removeActive = () => {
-    card.forEach(card => {    
+    cards.forEach(card => {    
         card.classList.remove('active');
     });
 };

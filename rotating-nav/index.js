@@ -3,6 +3,6 @@ const open = document.querySelector('.open');
 const close = document.querySelector('.close');
 
 
-open.addEventListener('click', () => container.classList.add('show-nav'));
+open.addEventListener('click', () => container.classList.add('rotate'));
 
-close.addEventListener('click', () => container.classList.remove('show-nav'));
+close.addEventListener('click', () => container.classList.remove('rotate'));

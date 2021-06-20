@@ -1,3 +1,4 @@
+/* General */
 *,
 *::before,
 *::after {
@@ -14,6 +15,8 @@ body {
     background-color: #F5F5F5;
 }
 
+/* Progress Bar */
+
 .progress-container {
     display: flex;
     justify-content: space-between;
@@ -29,7 +32,6 @@ body {
     width: 100%;
     height: 3px;
     top: 50%;
-    /* left: 0%; */
     z-index: -2;
 }
 
@@ -44,6 +46,8 @@ body {
     transition: 0.5s ease;
 }
 
+/* Circles */
+
 .circle {
     display: flex;
     justify-content: center;
@@ -52,8 +56,8 @@ body {
     border: #d3d3d3 3px solid;
     border-radius: 50%;
     color: #d3d3d3;
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     transition: 0.5s ease;
 }
 
@@ -61,7 +65,10 @@ body {
     border-color:#00BFFF;
 }
 
+/* Buttons */
+
 .buttons-container {
+    margin-top: 30px;
     width: 600px;
     display: flex;
     justify-content: center;
@@ -70,21 +77,16 @@ body {
 button {
     background-color: #00BFFF;
     color: #fff;
-    border: 0;
-    border-radius: 6px;
+    border: none;
+    border-radius: 10px;
     cursor: pointer;
-    font-family: inherit;
-    padding: 8px 30px;
+    font-size: 1rem;
+    padding: 6px 35px;
     margin: 5px;
-    font-size: 14px;
 }
 
 button:active {
     transform: scale(0.90);
-}
-  
-button:focus {
-    outline: 0;
 }
 
 button:disabled {

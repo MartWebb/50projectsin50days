@@ -1,15 +1,14 @@
 const progressBar = document.querySelector('.progress-bar');
-const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
 const circles = document.querySelectorAll('.circle');
 const activeList = document.querySelectorAll('.active');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
 
 const startingPoint = 1;
 let activeCount = 1;
-console.log(progressBar)
+
 const progressUpdate = () => {
     const activeList = document.querySelectorAll('.active');
-    console.log(activeList)
     progressBar.style.width = (activeList.length -1) / (circles.length - 1) * 100 + '%';
 };
 
