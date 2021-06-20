@@ -1,30 +1,28 @@
-/* General */
+/*  General */
 
 *,
 *::after,
 *::before {
     box-sizing: border-box;
     margin: 0;
-    padding: 0%;
+    padding: 0;
 }
 
 body {
     font-family: 'Comic Neue', cursive;
     background-color: #333;
     color: #222;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .container {
-    background-color: #F2F3F4;
-    transform-origin: top left;
-    transition: transform 0.5s linear;
     width: 100vw;
     min-height: 100vh;
     padding: 50px;
+    background-color: #F2F3F4;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
 }
-
-/* Rotator */
 
 .rotator-container {
     position: fixed;
@@ -45,44 +43,43 @@ body {
     transform: rotate(-20deg);
 }
 
+.container.rotate {
+    transform: rotate(-20deg);
+}
+
 .container.rotate .rotator {
     transform: rotate(-70deg);
 }
 
 .rotator button {
-    cursor: pointer;
     position: absolute;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #fff;
     top: 50%;
     left: 50%;
     height: 100px;
     background: transparent;
-    border: 0;
-    font-size: 26px;
-    color: #fff;
+    border: none;
 }
 
-.rotator button:focus {
-    outline: none;
-}
-
-.rotator button.open {
+.rotator .open-button {
     left: 60%;
 }
 
-.rotator button.close {
+.rotator .close-button {
     top: 60%;
     transform: rotate(90deg);
     transform-origin: top left;
 }
 
 /* Content */
-
-.content {
+main {
     max-width: 1000px;
     margin: 80px auto;
 }
 
-.content-header {
+header {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 20px;
@@ -92,50 +89,54 @@ body {
     max-width: 100%;
 }
 
-.content p {
-    color: #333;
-    line-height: 1.5;
+.content-text {
     margin-top: 20px;
+    color: #333;
+    line-height: 1.5rem;
 }
 
 /* Nav */
 
-.container.rotate + nav li {
+.container.rotate + nav .nav-item {
     transform: translateX(0);
-    transition-delay: 0.3s;
+    transition-delay: 0.2s;
 }
 
 nav {
     position: fixed;
     bottom: 40px;
     left: 0;
-    z-index: 100;
+    z-index: 1;
 }
 
-nav ul {
+.nav-list {
     list-style-type: none;
     padding-left: 30px;
 }
 
-nav ul li {
-    text-transform: uppercase;
+.nav-link {
+    text-decoration: none;
     color: #fff;
+    text-transform: uppercase;
+}
+
+.nav-item {
     margin: 40px 0;
     transform: translateX(-100%);
     transition: transform 0.4s ease-in;
 }
 
-nav ul li i {
+.icon {
     font-size: 20px;
     margin-right: 10px;
 }
 
-nav ul li + li {
+.nav-item:nth-child(2) {
     margin-left: 15px;
     transform: translateX(-150%);
 }
 
-nav ul li + li + li {
+.nav-item:nth-child(3) {
     margin-left: 30px;
     transform: translateX(-200%);
 }

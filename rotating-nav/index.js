@@ -1,8 +1,6 @@
 const container = document.querySelector('.container');
-const open = document.querySelector('.open');
-const close = document.querySelector('.close');
+const openBtn = document.querySelector('.open-button');
+const closeBtn = document.querySelector('.close-button');
 
-
-open.addEventListener('click', () => container.classList.add('rotate'));
-
-close.addEventListener('click', () => container.classList.remove('rotate'));
+openBtn.addEventListener('click', () => container.classList.add('rotate'));
+closeBtn.addEventListener('click', () => container.classList.remove('rotate'));
