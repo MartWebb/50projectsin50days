@@ -1,12 +1,20 @@
-const getJokeBtn = document.querySelector('.get-joke');
+const jokeBtn = document.querySelector('.joke-btn');
+const joke = document.querySelector('.joke');
 
 
-
-getJokeBtn.addEventListener('click', () => {
+jokeBtn.addEventListener('click', () => {
     getJoke();
 });
 
 async function getJoke () {
-const response = await fetch("https://icanhazdadjoke.com/");
-console.log(response)
+    const response = await fetch("https://icanhazdadjoke.com", {
+        headers: {
+            "Accept": "application/json"
+        }
+    });
+
+    const data = await response.json();
+    joke.textContent = data.joke;
 }
+
+getJoke();
