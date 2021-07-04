@@ -28,3 +28,7 @@ body {
     justify-content: center;
     height: 100vh;
 }
+
+.mode {
+    background-color: var(--main-clr);
+}
