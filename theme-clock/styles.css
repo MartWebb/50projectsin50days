@@ -51,8 +51,9 @@ body {
     position: relative;
     width: 200px;
     height: 200px;
-    background-color: #f0f0f0;
+    background-color: #F4F6F7;
     border-radius: 50%;
+    margin-bottom: 20px;
 }
 
 .center {
@@ -97,25 +98,32 @@ body {
     font-size: 3em;
 }
 
+.date-container {
+    display: flex;
+}
+
 .date {
-    color: #aaa;
+    color: #D7DBDD;
     font-size: .8em;
-    letter-spacing: .4em;
+    letter-spacing: 0.3em;
     text-transform: uppercase;
+    align-self: center;
+    margin-right: 2px;
 }
 
 
-.date .circle {
+.circle {
     background-color: var(--main-clr);
     color: var(--secondary-clr);
     border-radius: 50%;
     height: 20px;
     width: 20px;
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     line-height: 20px;
     transition: all 0.5s ease-in;
     font-size: 1rem;
 }
+
   
