@@ -1,24 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* General */
 
-:root {
-  --left-bg-color: rgba(87, 84, 236, 0.7);
-  --right-bg-color: rgba(43, 43, 43, 0.8);
-  --left-btn-hover-color: rgba(87, 84, 236, 1);
-  --right-btn-hover-color: rgba(28, 122, 28, 1);
-  --hover-width: 75%;
-  --other-width: 25%;
-  --speed: 1000ms;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-* {
-  box-sizing: border-box;
+:root {
+	--left-bg-color: rgba(87, 84, 236, 0.7);
+	--right-bg-color: rgba(43, 43, 43, 0.8);
+	--left-btn-hover-color: rgba(87, 84, 236, 1);
+	--right-btn-hover-color: rgba(28, 122, 28, 1);
+	--hover-width: 75%;
+	--other-width: 25%;
+	--speed: 1000ms;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  height: 100vh;
-  overflow: hidden;
-  margin: 0;
+	font-family: 'Roboto', sans-serif;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: #fff;
 }
 
 h1 {
@@ -57,13 +67,6 @@ h1 {
 .split.right .btn:hover {
   background-color: var(--right-btn-hover-color);
   border-color: var(--right-btn-hover-color);
-}
-
-.container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: #333;
 }
 
 .split {
