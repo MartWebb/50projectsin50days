@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Form Input Wave</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Please Login</h1>
-      <form>
-        <div class="form-control">
-          <input type="text" required>
-          <label>Email</label>
-          <!-- <label>
-            <span style="transition-delay: 0ms">E</span>
-              <span style="transition-delay: 50ms">m</span>
-              <span style="transition-delay: 100ms">a</span>
-              <span style="transition-delay: 150ms">i</span>
-              <span style="transition-delay: 200ms">l</span>
-        </label> -->
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Wave Animation</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Please Login</h1>
+            <form>
+                <div class="input-container">
+                    <input  type="text">
+                    <label>Email</label>
+                </div>
+
+                <div class="input-container">
+                    <input type="password">
+                    <label >Password</label>
+                </div>
+                <button>Login</button>
+                <small>Don't have an account? <a href="#">Register</a></small>
+            </form> 
         </div>
-
-        <div class="form-control">
-          <input type="password" required>
-          <label>Password</label>
-        </div>
-
-        <button class="btn">Login</button>
-
-        <p class="text">Don't have an account? <a href="#">Register</a> </p>
-      </form>
-    </div>
-    <script src="index.js"></script>
-  </body>
+        <script src="index.js"></script>
+    </body>
 </html>
+    
