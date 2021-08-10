@@ -14,28 +14,35 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Comic Neue', cursive;
 }
 
 .card {
     background-color: #fff;
     max-width: 1000px;
     width: 600px;
-    height: 300px;
+    height: 400px;
     text-align: center;
     padding: 20px;
+    border-radius: 5px;
 }
 
 .title {
-    
+    font-size: 3rem;
 }
 
 .joke {
-    margin: 20px;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    height: 100px;
 }
 
 .joke-btn {
     display: inline-block;
+    margin-top: 50px;
     padding: 20px;
     background-color: rgb(81, 58, 136);
+    border-radius: 5px;
+    border: none;
+    box-shadow: -1px 2px 22px 4px rgba(0,0,0,0.21);
 }
-
