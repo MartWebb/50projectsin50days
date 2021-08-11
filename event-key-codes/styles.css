@@ -1,21 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
-
+/* General */
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    background-color: #e1e1e1;
-    font-family: 'Muli', sans-serif;
+    background-color: #707B7C;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     height: 100vh;
-    overflow: hidden;
-    margin: 0;
 }
 
 .key {
@@ -31,6 +29,7 @@ body {
     margin: 10px;
     min-width: 150px;
     position: relative;
+    border-radius: 5px;
 }
 
 .key small {
@@ -41,4 +40,10 @@ body {
     width: 100%;
     color: #555;
     font-size: 14px;
+}
+
+@media(max-width:768px){
+    .key{
+      margin: 10px 0px;
+     }
 }
