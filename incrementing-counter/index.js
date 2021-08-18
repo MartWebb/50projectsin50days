@@ -4,6 +4,7 @@ counters.forEach(counter => {
     counter.innerText = '0';
 
     const updateCounter = () => {
+        //Unary plus to convert to a number
         const target = +counter.getAttribute('data-target');
         const c = +counter.innerText;
 
